@@ -18,7 +18,7 @@ for (var i = 0; i < 10; i++) {
 }
 console.log(somma)*/;
 
-var lista = ["giorgio", "Francesca", "pippo"]
+/*var lista = ["giorgio", "Francesca", "pippo"]
 var nome = prompt("scrivi il tuo nome ")
 
 //variabile di controllo
@@ -32,4 +32,11 @@ for (var i = 0; i < lista.length && !verifica; i++) {
 }
 if (!verifica) {
     console.log("il tuo nome non è sulla lista");
+}*/
+var array = [];
+for (var i = 0; i < 6; i++) {
+    var numero = prompt("inserire un numero");
+    if ((numero % 2) != 0) {
+        array.push(numero);
+    }
 }
