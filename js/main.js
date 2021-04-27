@@ -11,9 +11,25 @@ if (word1.length === word2.length) {
     console.log(word2);
 }*/
 
-var somma = 0;
+/*var somma = 0;
 for (var i = 0; i < 10; i++) {
     var numero = parseInt(prompt("inserire numero"));
     somma += numero;
 }
-console.log(somma);
+console.log(somma)*/;
+
+var lista = ["giorgio", "Francesca", "pippo"]
+var nome = prompt("scrivi il tuo nome ")
+
+//variabile di controllo
+var verifica = false;
+
+for (var i = 0; i < lista.length && !verifica; i++) {
+    if (lista[i] == nome) {
+        console.log("il tuo nome è sulla lista");
+        verifica = true;
+    }
+}
+if (!verifica) {
+    console.log("il tuo nome non è sulla lista");
+}
