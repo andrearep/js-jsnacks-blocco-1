@@ -41,8 +41,22 @@ for (var i = 0; i < 6; i++) {
     }
 }*/
 
-var numero = prompt("inserire numero");
+/*var numero = prompt("inserire numero");
 
 for (var i = 0; i < numero; i++) {
     console.log(Math.pow((i + 1), 3));
-}
+}*/
+
+var numero = prompt("inserire numero di 4 cifre:");
+var controllo = true;
+var array = [];
+array.push(Math.floor(numero / 1000));
+console.log(array[0]);
+array.push(Math.floor((numero - (array[0] * 1000)) / 100));
+console.log(array[1]);
+array.push(Math.floor((numero - (array[0] * 1000 + array[1] * 100)) / 10));
+console.log(array[2]);
+array.push(Math.floor((numero - (array[0] * 1000 + array[1] * 100 + array[2] * 10))));
+console.log(array[3]);
+
+console.log(array[0] + array[1] + array[2] + array[3]);
