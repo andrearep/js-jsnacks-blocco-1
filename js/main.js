@@ -33,10 +33,17 @@ for (var i = 0; i < lista.length && !verifica; i++) {
 if (!verifica) {
     console.log("il tuo nome non è sulla lista");
 }*/
-var array = [];
+/*var array = [];
 for (var i = 0; i < 6; i++) {
     var numero = prompt("inserire un numero");
     if ((numero % 2) != 0) {
         array.push(numero);
     }
+}*/
+
+var numero = prompt("inserire numero");
+
+for (var i = 0; i < numero; i++) {
+    cubo = (i + 1) ** 3;
+    console.log(cubo);
 }
