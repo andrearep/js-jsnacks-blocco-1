@@ -44,6 +44,5 @@ for (var i = 0; i < 6; i++) {
 var numero = prompt("inserire numero");
 
 for (var i = 0; i < numero; i++) {
-    cubo = (i + 1) ** 3;
-    console.log(cubo);
+    console.log(Math.pow((i + 1), 3));
 }
